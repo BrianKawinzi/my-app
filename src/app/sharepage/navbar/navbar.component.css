@@ -1,0 +1,11 @@
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: var(--secondary-color);
+    font-weight: 700;
+    
+}
+.navbar-expand-lg .navbar-nav .nav-link.active-link{
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: underline;
+    
+}
