@@ -1,10 +1,20 @@
+<!--searchbar-container-->
 <div class="banner">
-    
-    <div class="content">
-        <h1 class="mb-5">Compare Prices and <br/>save up to 80%.</h1>
-        <a routerLink="menu">FIND DRUGS <i class="bi bi-arrow-right"></i></a>
+    <div class="search-barWrapper">
+        <div class="Searchbarheader">
+            <h2>Compare prices and save upto 80%</h2>
+        </div>
+        <div class="parent-container">
+            <div class="container">
+            <input type="text" class="search-input" placeholder="Enter the medication...." >
+            <button class="Search-btn" (click)="onSearch()">
+                <i class="material-icons">search</i>
+            </button>
+            </div>
+        </div>
     </div>
 </div>
+<!--stepBox-->
 <div class="container mt-5 mb-4">
     <h1 class="text-center">How to <span class="highlight">order medicine</span></h1>
     <div class="row mt-5">
@@ -30,4 +40,4 @@
         </div>
     </div>
 </div>
-
+  
