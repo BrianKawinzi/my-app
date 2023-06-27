@@ -1,0 +1,83 @@
+
+    /* General styles */
+ body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Mission section */
+    .mission {
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    .mission h1 {
+        font-size: 24px;
+        color: #333;
+        margin: 0 0 10px;
+    }
+
+    .missionContent p {
+        color: #555;
+        line-height: 1.5;
+    }
+
+    /* Team section */
+    .team {
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .team h1 {
+        font-size: 24px;
+        color: #333;
+        margin: 0 0 10px;
+    }
+
+    .teamContent p {
+        color: #555;
+        line-height: 1.5;
+    }
+
+    .teamLeaders {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .teamLeaders .ceo,
+    .teamLeaders .cto {
+        flex-basis: 50%;
+        padding: 10px;
+    }
+
+    .teamLeaders h1 {
+        font-size: 18px;
+        color: #333;
+        margin: 0 0 10px;
+    }
+
+    .ceoContent p,
+    .ctoContent p {
+        color: #555;
+        line-height: 1.5;
+    }
+
+    /* Customers section */
+    .customers {
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .customers h1 {
+        font-size: 24px;
+        color: #333;
+        margin: 0 0 10px;
+    }
+
+    .customerContent p {
+        color: #555;
+        line-height: 1.5;
+    }

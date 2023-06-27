@@ -1,143 +1,153 @@
-/**searchbar styling**/
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
-.banner{
-  background: url(../../../assets/banner1.jpg);
-  height: 600px;
-  background-position: center top;
-  background-size: cover;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+/* Banner section */
+.banner {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.search-barWrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-barWrapper h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
 .parent-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-  }
-  .container {
-    display: flex;
-    align-items: center;
-    max-width: 800px; /* Adjust this value based on your design preference */
-    width: 100%;
-    position: relative;
-  }
-  .Searchbarheader h2{
-
-    text-align: center;
-    padding-top: 26px;
-    color: #fff;
-
-  }
-  .search-input {
-    padding: 0.5rem 1rem;
-    height: 3rem;
-    border: 1px solid #ccc;
-    border-radius: 50px;
-    flex-grow: 1;
-    margin: 10px 0;
-    padding-right: 3rem;
-    box-sizing: border-box;
-  }
-
-  .Search-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-    background-color:#07b90a;
-    border-radius: 0 50px 0;
-    color: white;
-    border: none;
-    border-radius: 0 25px 0;
-    padding: 0.5rem;
-    cursor: pointer;
-    font-size: 1rem;
-    position: absolute; /* Add this line */
-    right: 0; /* Add this line */
-    height: 3rem;
-    width: 3rem; /* Adjust this value if needed */
-  }
-  
-  /**services styling**/
-  .services-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-  }
-  
-  .service {
-    width: 300px;
-    text-align: center;
-    margin: 1rem;
-  }
-  
-  .service img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .service h3 {
-    margin: 1rem 0;
-  }
-  .service p {
-    overflow: hidden;
-    transition: height 0.3s ease-in-out;
-  }
-  
-  .service p.collapsed {
-    height: 3.6rem; /* Adjust this value to control the number of visible lines when collapsed */
-  }
-  .services-header {
-      display: flex;
-      justify-content: center;
-      margin-top: 12px;
-      font-weight: 600;
-  }
-  /**stepBox styling**/
-  .stepBox{
-    background-color: #000;
-    padding: 20px 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-.stepBox h1{
-    font-size: 50px;
-    font-weight: 700;
-    color: var(--primary-color);
-}
-.stepBox p{
-    font-size: 20px;
-    font-style: italic;
-    color: #fff;
-}
-.highlight{
-    color: var(--primary-color);
-    font-weight: 700;
-    font-style: italic;
-    text-decoration: underline;
-}
-/**features and benefits**/
-.features-benefits{
-  background: url(../../../assets/banner.jpg);
-  height: 40%;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 2rem 0;
-
+  justify-content: center;
+  margin-top: 20px;
 }
-.benfits{
-  float: left;
+
+.container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 5px;
+}
+
+.Search-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Service section */
+.service-container {
+  padding: 20px;
+}
+
+.service-header h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.service {
+  margin-top: 20px;
+}
+
+.service h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.service img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #555;
+  line-height: 1.5;
+  max-height: 150px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.service p.collapsed {
+  max-height: 50px;
+}
+
+.service button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Features and Benefits section */
+.features-benefits {
+  display: flex;
   justify-content: space-between;
-  margin-right: 80;
- 
+  padding: 20px;
 }
-.features-benefits ul li{
-  color: #fff;
-  list-style-type: circle;
+
+.features,
+.benefits {
+  flex-basis: 48%;
 }
-.features-benefits h1{
-  color: #fff;
-  text-decoration: solid;
+
+.features h1,
+.benefits h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.features ul,
+.benefits ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.features ul li,
+.benefits ul li {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .parent-container {
+      flex-direction: column;
+  }
+
+  .container {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .search-input {
+      margin-bottom: 10px;
+  }
+
+  .service-container {
+      padding: 10px;
+  }
+
+  .features,
+  .benefits {
+      flex-basis: 100%;
+  }
 }
