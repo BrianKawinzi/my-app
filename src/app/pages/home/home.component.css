@@ -115,3 +115,29 @@
     font-style: italic;
     text-decoration: underline;
 }
+/**features and benefits**/
+.features-benefits{
+  background: url(../../../assets/banner.jpg);
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+
+}
+.benfits{
+  float: left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 80;
+ 
+}
+.features-benefits ul li{
+  color: #fff;
+  list-style-type: circle;
+}
+.features-benefits h1{
+  color: #fff;
+  text-decoration: solid;
+}
