@@ -9,3 +9,30 @@
     text-decoration: underline;
     
 }
+
+#navbar {
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  /* CSS for the navbar links */
+  #navbar a {
+    float: right;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* CSS for the signup button */
+  #navbar .signup-button {
+    float: right;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
