@@ -14,6 +14,8 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SignuppageComponent } from './pages/signuppage/signuppage.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { SignuppageComponent } from './pages/signuppage/signuppage.component';
     MenuComponent,
     AboutComponent,
     ContactComponent,
-    SignuppageComponent
+    SignuppageComponent,
+    SignupComponent,
+    SignInComponent
    
   ],
   imports: [

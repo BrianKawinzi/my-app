@@ -1,0 +1,19 @@
+<div class="container">
+    <form class="form" id="signup-form" (submit)="signUp()">
+      <h2>Sign Up</h2>
+      <div class="form-group">
+        <label for="signup-email">Email:</label>
+        <input type="email" id="signup-email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Sign Up</button>
+      </div>
+      <div class="form-group switch-form">
+        <span>Already have an account? </span><a routerLink="signin" routerLinkActive="active-link">Sign In</a>
+      </div>
+    </form>
+</div>
